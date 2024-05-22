@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/restorent/static/css/main.094e8e91.css",
+    "main.js": "/restorent/static/js/main.1c3f4c99.js",
+    "static/js/453.d61660a1.chunk.js": "/restorent/static/js/453.d61660a1.chunk.js",
+    "static/media/masala.jpg": "/restorent/static/media/masala.f4dd64f4906d42ddcbdb.jpg",
+    "static/media/banner.jpeg": "/restorent/static/media/banner.05892fe97cce26a5d9e5.jpeg",
+    "static/media/chhola.jpg": "/restorent/static/media/chhola.a1458ef1370699c23212.jpg",
+    "static/media/member2.png": "/restorent/static/media/member2.bfcbc1ccefe7c97a8f20.png",
+    "static/media/member3.png": "/restorent/static/media/member3.526f7b10c319633d0131.png",
+    "static/media/member1.png": "/restorent/static/media/member1.44bec48fbc1bdd382987.png",
+    "static/media/member4.png": "/restorent/static/media/member4.0def574fff1a4575f44a.png",
+    "static/media/paneer.jpg": "/restorent/static/media/paneer.f04d2c563fe596463e47.jpg",
+    "static/media/idli.jpg": "/restorent/static/media/idli.dc2d98fda6c7a903c64b.jpg",
+    "static/media/gujrati.jpeg": "/restorent/static/media/gujrati.77bd2d3baa11e6cf3dcd.jpeg",
+    "static/media/dosa.jpg": "/restorent/static/media/dosa.5c938f456ea86779ba13.jpg",
+    "index.html": "/restorent/index.html",
+    "main.094e8e91.css.map": "/restorent/static/css/main.094e8e91.css.map",
+    "main.1c3f4c99.js.map": "/restorent/static/js/main.1c3f4c99.js.map",
+    "453.d61660a1.chunk.js.map": "/restorent/static/js/453.d61660a1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.094e8e91.css",
+    "static/js/main.1c3f4c99.js"
+  ]
+}
