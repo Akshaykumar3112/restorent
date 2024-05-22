@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import './App.css';
+import Home from './pages/Home';
+import About from './pages/About';
+import Menu from './pages/Menu';
+import Contact from './pages/Contact';
+import Pagenotfound from './pages/Pagenotfound';
+import Header from './components/Layout/Header';
+import React, { useState } from 'react';
+import Footer from './components/Footer';
 
 function App() {
+
+  const [mode, setMode] = useState('black');
+  const toggleMode = () =>{
+    if(mode === 'light'){
+      setMode('black');
+    }else{
+      setMode('light');
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+      <Header mode={mode} toggleMode={toggleMode} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Pagenotfound /> } />
+        </Routes>
+        <Footer mode={mode} />
+      </BrowserRouter>
     </div>
   );
 }
