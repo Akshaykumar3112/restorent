@@ -25,7 +25,7 @@ function App() {
       <BrowserRouter>
       <Header mode={mode} toggleMode={toggleMode} />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/restorent" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/contact" element={<Contact />} />

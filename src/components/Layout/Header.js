@@ -52,7 +52,7 @@ const Header = (props) => {
            <Box sx={{display: { xs:'none', sm:'block'} }}>
             <ul className='naviagation-menu'>
               <li>
-                <NavLink activeClassName="active" to={"/"}>Home</NavLink>
+                <NavLink activeClassName="active" to={"/restorent"}>Home</NavLink>
               </li>
               <li>
                 <NavLink to={"/menu"}>Menu</NavLink>
