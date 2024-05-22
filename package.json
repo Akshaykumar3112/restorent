@@ -1,6 +1,5 @@
 {
   "name": "reactproject",
-  "homepage" : "https://akshaykumar3112.github.io/restorent/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
