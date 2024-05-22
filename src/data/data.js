@@ -11,7 +11,7 @@ export const MenuList = [
     },
     {
         name: 'Chole Kulche',
-        description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit itaque unde velit temporibus voluptatem reiciendis iusto eveniet quibusdam magnam, ',
+        description : 'Loremd ipsum dolor sit amet consectetur adipisicing elit. Fugit itaque unde velit temporibus voluptatem reiciendis iusto eveniet quibusdam magnam, ',
         imageUrl: Chola,
         price: 20
     },
