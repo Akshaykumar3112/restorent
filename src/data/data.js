@@ -1,5 +1,5 @@
 // import Dosa from '../images/dosa.jpg';
-// import Chola from '../images/chhola.jpg';
+// import Choola from '../images/chhola.jpg';
 import {Dosa, Chola, Paneer, MasalaDhosa, Gujrati, Idli} from '../images/index'
 
 export const MenuList = [
@@ -11,7 +11,7 @@ export const MenuList = [
     },
     {
         name: 'Chole Kulche',
-        description : 'Loremd ipsum dolor sit amet consectetur adipisicing elit. Fugit itaque unde velit temporibus voluptatem reiciendis iusto eveniet quibusdam magnam, ',
+        description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit itaque unde velit temporibus voluptatem reiciendis iusto eveniet quibusdam magnam, ',
         imageUrl: Chola,
         price: 20
     },
