@@ -6,32 +6,29 @@ import Menu from './pages/Menu';
 import Contact from './pages/Contact';
 import Pagenotfound from './pages/Pagenotfound';
 import Header from './components/Layout/Header';
-import React, { useState } from 'react';
+import React from 'react';
 import Footer from './components/Footer';
-
+import CartContextProvider from './context/CartContextProvider';
+import Cart from './pages/Cart';
 function App() {
 
-  const [mode, setMode] = useState('black');
-  const toggleMode = () =>{
-    if(mode === 'light'){
-      setMode('black');
-    }else{
-      setMode('light');
-    }
-  }
-
+  
+  
   return (
     <div>
       <BrowserRouter>
-      <Header mode={mode} toggleMode={toggleMode} />
+      <CartContextProvider>
+      <Header  />
         <Routes>
           <Route path="/restorent" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="*" element={<Pagenotfound /> } />
         </Routes>
-        <Footer mode={mode} />
+        <Footer  />
+        </CartContextProvider>
       </BrowserRouter>
     </div>
   );

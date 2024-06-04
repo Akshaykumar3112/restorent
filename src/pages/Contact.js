@@ -3,12 +3,12 @@ import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import EmailIcon from '@mui/icons-material/Email';
 import AddIcCallIcon from '@mui/icons-material/AddIcCall';
 import { Box, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from '@mui/material';
-import { FormatAlignJustify } from '@mui/icons-material';
+
 
 const Contact = () => {
   return (
     <Box sx={{
-      minHeight:"80vh",
+      minHeight:"100vh",
     }}>
       <Box sx={{
         p:10,

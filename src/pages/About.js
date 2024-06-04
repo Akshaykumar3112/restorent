@@ -8,7 +8,7 @@ const About = () => {
   
        <Box className="about" sx={{
         my:3,
-        minHeight: "80vh",
+        minHeight: "100vh",
         textAlign:"Center",
         p:2,
         "& h4": {

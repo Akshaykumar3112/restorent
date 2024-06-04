@@ -1,31 +1,67 @@
-import { Box, Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material';
-import React from 'react';
+import { Box, Card, CardActions, CardContent, CardMedia, Typography} from '@mui/material';
+import React, { useContext } from 'react';
+import '../style/style.css'; 
 import { MenuList } from '../data/data';
+import CustomButton from '../components/Button';
+import CartContext from '../context/CartContext';
+
+
 
 const Menu = () => {
+
+  const { addToCart} = useContext(CartContext);
   return (
-    
-      <Box sx={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+      
+      <Box className="menu" sx={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
         {
           MenuList.map(menu => (
-            <Card sx={{maxWidth: "350px", display: "flex", m:2  }}>
-              <CardActionArea>
-                <CardMedia sx={{minHeight: '360px'}} component={'img'} src={menu.imageUrl} alt={menu.name} />
+            <Card className='menuCard' key={menu.id} sx={{maxWidth: "320px", m:2  }}>
+              
+                <CardMedia 
+                  sx={{minHeight: '320px'}} 
+                  component={'img'} 
+                  src={menu.imageUrl} 
+                  alt={menu.name} 
+                />
                 <CardContent>
-                  <Typography variant='h5' gutterBottom component={'div'} >
-                    {menu.name}
-                  </Typography>
-
-                  <Typography variant='body2'>
+                  <Box sx={{display:'flex', justifyContent:'space-between'}}>
+                    <Typography 
+                      variant='h5' 
+                      gutterBottom 
+                      component={'div'} 
+                    >
+                      {menu.name}
+                    </Typography>
+                    
+                    <Typography 
+                      variant='h6' 
+                      component={'div'}
+                    >
+                      {menu.price}$
+                    </Typography>
+                  </Box>
+                  
+                  <Typography 
+                    variant='body2'
+                  >
                     {menu.description}
                   </Typography>
+                  
                 </CardContent>
-              </CardActionArea>
+                <CardActions>
+                  
+                    <CustomButton 
+                      onClick={() => addToCart(menu)} 
+                      label="Add TO CART" 
+                      styleType="btn-primary" 
+                    />
+                 
+                </CardActions>
             </Card>
           ))
         }
       </Box>
-
+ 
   );
 }
 

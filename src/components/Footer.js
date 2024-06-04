@@ -1,10 +1,10 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
 
-const Footer = (props) => {
+const Footer = () => {
   return (
     <>
-        <Box sx={{textAlign:'center', bgcolor:props.mode, color:'white', p:2}}>
+        <Box sx={{textAlign:'center', bgcolor:'black', color:'white', p:2}}>
             <Typography 
                 variant='h5' 
                 sx={{ "@media (max-width: 600px)":{

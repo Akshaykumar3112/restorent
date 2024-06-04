@@ -35,6 +35,39 @@
     border-radius: 5px;
 }
 
+.btn-primary{
+    background-color: black !important;
+}
+
+.btn-primary:hover{
+    background-color: goldenrod !important;
+    color: black !important;
+}
+
+.btn-secondary{
+    background-color: goldenrod !important;
+    color: black !important;
+}
+
+
+/* CartStyle.css */
+.cart-container {
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .cart-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .cart-item p {
+    margin: 5px 0;
+  }
+
+
 /* MOBILE VIEW */
 @media only screen and (max-width:600px){
     .home{
@@ -71,6 +104,8 @@
         background-color: white;
         color: goldenrod;
     }
-
     
+
+   
 }
+
