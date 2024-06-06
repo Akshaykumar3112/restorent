@@ -114,7 +114,7 @@ const Header = () => {
           <Divider />
           <ul className='mobile-navigation'>
             <li>
-              <Link to={"/"}>Home</Link>
+              <Link to={"/restorent"}>Home</Link>
             </li>
             <li>
               <Link to={"/menu"}>Menu</Link>
