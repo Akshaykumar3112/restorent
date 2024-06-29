@@ -143,7 +143,7 @@ const Cart = () => {
             </StyledTableCell>
             <StyledTableCell align="right">
               {" "}
-              <b>Total = {total} $ </b>
+              <b>Total = {total.toFixed(2)} $ </b>
             </StyledTableCell>
             <StyledTableCell></StyledTableCell>
           </StyledTableRow>
