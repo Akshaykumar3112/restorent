@@ -5,13 +5,15 @@ import { Button } from "@mui/material";
 
 
 
-const CustomButton= ({label, styleType, onClick}) =>{
+const CustomButton= ({label, styleType, onClick, startIcon}) =>{
 
     return (
         <Button 
             className={styleType} 
             variant="contained" 
-            onClick={onClick} 
+            onClick={onClick}
+            startIcon =  {startIcon}
+            sx={{m:1}}
         >
             {label}
         </Button> 
@@ -19,7 +21,6 @@ const CustomButton= ({label, styleType, onClick}) =>{
 };
 
 CustomButton.propTypes = {
-    label: propTypes.string.isRequired,
     styleType: propTypes.string,
     onClick: propTypes.func.isRequired,
 };

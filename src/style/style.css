@@ -49,6 +49,19 @@
     color: black !important;
 }
 
+.btn-quantity{
+    width: 24px !important;
+    height: 30px;
+    min-width: 24px !important;
+    padding: 0;
+    background-color: black !important;
+}
+
+.btn-quantity:hover{
+    background-color: goldenrod !important;
+    color: black;
+}
+
 
 /* CartStyle.css */
 .cart-container {
